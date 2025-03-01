@@ -1,0 +1,21 @@
+li{
+    list-style: none;
+}
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1px;
+    list-style: none;
+    padding: 0;
+}
+
+.contact {
+    display: flex;
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 240px; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 7px;
+    margin-bottom: 10px;
+}
