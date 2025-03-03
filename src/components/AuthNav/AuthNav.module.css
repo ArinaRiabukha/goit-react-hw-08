@@ -1,13 +1,14 @@
+.container{
+  display: flex; 
+  gap: 20px;
+  padding: 0 20px;
+}
 .link{
-    color:black;
-    font-size: 26px;
-    text-decoration: none;
+  font-family: sans-serif;
+  color:black;
+  font-size: 24px;
+  text-decoration: none;
   }
-  .nav{
-    display: flex;
-    gap:20px;
-  }
-  .active{
-    color:red;
-    text-decoration: underline;
-  }
+.active{
+  color:red;
+}

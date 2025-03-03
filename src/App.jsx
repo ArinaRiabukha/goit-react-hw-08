@@ -11,6 +11,7 @@ import { refreshUser } from "./redux/auth/AuthOps";
 import { selectIsRefreshing } from "./redux/auth/AuthSelectors";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import RestrictedRoute from "./components/RestrictedRoute/RestrictedRoute";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   const dispatch = useDispatch();
@@ -21,6 +22,7 @@ const App = () => {
 
   return isRefreshing ? null : (
     <div className={s.container}>
+      <Toaster /> 
       <Routes>
         <Route path="/" element={<Layout />} >
         <Route index element={<HomePage/>} />

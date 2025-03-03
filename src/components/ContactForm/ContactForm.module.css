@@ -1,7 +1,7 @@
 .form{
     display: flex;
     flex-direction: column;
-    margin-bottom: 25px;
+    margin: 25px;
     padding: 15px 10px;
     width: 290px;
 
@@ -42,7 +42,7 @@
 }
 .button:hover,
 .button:focus{
-    background-color: rgb(175, 174, 174);
+    background-color: rgb(211, 211, 211);
 }
 .error{
     display: flex;

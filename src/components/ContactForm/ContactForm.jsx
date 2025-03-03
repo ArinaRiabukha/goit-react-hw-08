@@ -4,6 +4,7 @@ import * as Yup from 'yup';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from '../../redux/contacts/contactsOps.js';
 import { selectContacts, selectLoading } from '../../redux/contacts/contsctsSelectors.js';
+import toast from 'react-hot-toast';
 
 const ContactForm = () => {
 
@@ -32,11 +33,12 @@ const ContactForm = () => {
         const isExisting = contacts.some(contact => contact.number === number);
 
         if (isExisting) {
-            alert(`${number} is already in contacts`);
-            return;
+          toast.error('This contact already exists!'); 
+          return;
         }
 
         dispatch(addContact({ name, number }));
+        toast.success('Contact added successfully!');
         resetForm();
     };
 

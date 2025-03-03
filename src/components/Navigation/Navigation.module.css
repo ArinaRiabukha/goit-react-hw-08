@@ -1,13 +1,10 @@
 .link{
-    color:black;
-    font-size: 26px;
-    text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bolder;
+  color:black;
+  font-size: 24px;
+  text-decoration: none;
   }
-  .nav{
-    display: flex;
-    gap:20px;
-  }
-  .active{
-    color:red;
-    text-decoration: underline;
-  }
+.active{
+  color:red;
+}

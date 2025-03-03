@@ -1,6 +1,7 @@
 import { useDispatch } from "react-redux";
 import s from "./Contact.module.css"
 import { deleteContact } from "../../redux/contacts/contactsOps";
+import toast from "react-hot-toast";
 
 const Contact = ({ name, number, id }) => {
 
@@ -11,7 +12,7 @@ const Contact = ({ name, number, id }) => {
       <p className={s.name}>{name}</p>
       <p className={s.number}>{number}</p>
       </div>
-      <button className={s.deleteBtn} onClick={() => dispatch(deleteContact(id))}>Delete</button>
+      <button className={s.deleteBtn} onClick={() => dispatch(deleteContact(id), toast.success('Contact deleted successfully!'))}>Delete</button>
     </>
   );
 };

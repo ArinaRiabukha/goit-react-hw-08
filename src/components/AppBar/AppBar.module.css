@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #ddd;
+}
+.header{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 27px;
+    padding: 17px;
+    margin: 0;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
