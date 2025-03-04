@@ -4,7 +4,7 @@ import SearchBox from "../../components/SearchBox/SearchBox";
 import Contactlist from "../../components/ContactList/ContactList";
 import { selectContacts, selectError, selectLoading } from "../../redux/contacts/contsctsSelectors";
 import { useEffect } from "react";
-import { fetchContacts } from "../../redux/contacts/contactsOps";
+import { fetchContacts } from "../../redux/contacts/operations";
 
 
 const ContactsPage = () => {
