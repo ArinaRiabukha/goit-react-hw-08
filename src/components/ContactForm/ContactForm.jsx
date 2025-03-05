@@ -3,7 +3,7 @@ import s from "./ContactForm.module.css"
 import * as Yup from 'yup';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from '../../redux/contacts/operations.js';
-import { selectContacts, selectLoading } from '../../redux/contacts/contsctsSelectors.js';
+import { selectContacts, selectLoading } from '../../redux/contacts/selectors.js';
 import toast from 'react-hot-toast';
 
 const ContactForm = () => {
